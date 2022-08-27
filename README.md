@@ -1,8 +1,8 @@
 [Download `node` nightly executable](https://guest271314.github.io/download-node-nightly-executable/). 
 
-Hardcoded to fetch OS architecture `linux-x64`.
+Set OS architecture to other than `linux-x64` [here](https://github.com/guest271314/download-node-nightly-executable/blob/main/index.html#L15).
 
 Depends: 
 - File System Access
 - Compression Streams
-- https://cors-anywhere.herokuapp.com/
+- https://corsproxy.io/
