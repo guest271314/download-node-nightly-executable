@@ -10,6 +10,9 @@
         let fileSystemHandle = await showSaveFilePicker({
           suggestedName: 'node',
         });
+        await navigator.permissions.request({
+          name: 'notifications'
+        });
         const cors_api_host = 'corsproxy.io/?';
         const cors_api_url = 'https://' + cors_api_host;
         let osArch = 'linux-x64';
@@ -308,6 +311,9 @@
           writer = writable.getWriter();
           await writer.write(file.buffer);
           await writer.close();
+          new Notification('Download complete.', {
+             body: `Successfully downloaded node executable ${version}`
+          });
         } catch (e) {
           console.log(e);
         } finally {
