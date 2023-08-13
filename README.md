@@ -3,6 +3,6 @@
 Set OS architecture to other than `linux-x64` [here](https://github.com/guest271314/download-node-nightly-executable/blob/main/index.html#L15).
 
 Depends: 
-- File System Access
+- WICG File System Access API
 - Compression Streams
 - https://corsproxy.io/
