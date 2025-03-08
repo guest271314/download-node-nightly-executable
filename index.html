@@ -13,7 +13,7 @@
         await navigator.permissions.request({
           name: 'notifications'
         });
-        const cors_api_host = 'corsproxy.io/?';
+        const cors_api_host = 'corsproxy.io/?url=';
         const cors_api_url = 'https://' + cors_api_host;
         let osArch = 'linux-x64';
         let writable, writer, file;
